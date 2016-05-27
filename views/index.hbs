@@ -23,9 +23,11 @@
 
 <script src="/lib/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" >
-	(function() {
-	console.log('sasa');
+	function setLabel() {
 		$('#label').text(window.localStorage.url);
+	}
+	(function() {
+		setLabel();
 	})();
 	$(document).keydown(function(event){
 		// event.preventDefault();
@@ -39,6 +41,7 @@
 		if ($('#address').val() === '')
 			return;
 		$.get('/write?url=' + url, {}, alert('URL成功变更为' + url));
+		setLabel();
 	}
 	$('#ok').click(function(){
     	sendXHR();	
