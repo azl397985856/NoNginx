@@ -13,7 +13,7 @@ var routerObj = {};
 var url = "";
 var jsession="";
 router.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");  
+  res.header("Access-Control-Allow-Origin", "http://localhost:8888");  
   res.header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"); 
   res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
   res.header("Access-Control-Allow-Credentials", true);  
@@ -39,6 +39,7 @@ router.get('', function (req, res) {
     jsession !== "" ? req.header['set-cookie'] = jsession : '';
     var sreq = superagent[req.method.toLowerCase()](reqPath)
     .set('Cookie', jsession)
+    .set('Accept', 'application/json, text/javascript, */*; q=0.01')
     .set('Content-Type', 'application/json; charset=utf-8')
     .send(_.extend(req.body,req.query)).end(function (err, data) {
     if (err) {

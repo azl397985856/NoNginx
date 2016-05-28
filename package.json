@@ -2,7 +2,7 @@
   "name": "NoNginx",
   "description": "used for integrating test with backend",
   "main": "bin/www",
-  "author": "azl397985856",
+  "author": "zhipenglu",
   "license": "MIT",
   "scripts": {
     "start": "nodemon ./bin/www"
