@@ -2,7 +2,7 @@
 
 # NoNginx
 [![Build Status](https://travis-ci.org/azl397985856/NoNginx.png)](https://travis-ci.org/azl397985856/NoNginx)
-[![Coverage Status](https://coveralls.io/repos/azl397985856/NoNginx/badge.svg?branch=master)]
+![Coverage Status](https://coveralls.io/repos/azl397985856/NoNginx/badge.svg?branch=master)
 ##frontEnd to backEnd integrated test web page.
 
 >>>>>>> e7c1ed19c66451a089a8aa2d1ee0fc2345f7c474
