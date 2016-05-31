@@ -1,9 +1,6 @@
 /*global module,require*/
 var express = require('express');
 var router = express.Router();
-var jsen = require('jsen');
-var Mock = require('mockjs');
-var monk = require('monk');
 var request = require('superagent');
 var _ = require('underscore');
 var mock = require('superagent-mocker')(request);
