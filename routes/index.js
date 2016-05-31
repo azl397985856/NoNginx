@@ -3,7 +3,6 @@ var express = require('express');
 var router = express.Router();
 var request = require('superagent');
 var _ = require('underscore');
-var mock = require('superagent-mocker')(request);
 var fs = require('fs');
 var routerObj = {};
 
